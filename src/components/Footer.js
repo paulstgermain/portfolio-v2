@@ -9,7 +9,7 @@ export default function Footer(){
         <StyledFooter>
             <div className='footerOrganizer'>
                 <div className='footerContact'>
-                    <h4>Paul St.Germain</h4>
+                    <h4>PAUL ST.GERMAIN</h4>
                     <p>Full-Stack Engineer</p>
                     <div className='icons'>
                         <a href='mailto:paulg.stgermain@gmail.com'><Envelope size={30} /></a>
