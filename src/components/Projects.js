@@ -22,3 +22,13 @@ const StyledProjects = styled.div`
         color: white;
     }
 `
+
+const projectsData = [
+    {
+        title: '',
+        details: '',
+        image: '',
+        github: '',
+        web: ''
+    },
+]

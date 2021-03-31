@@ -124,6 +124,7 @@ const StyledFooter = styled.footer`
             &:hover {
                 background-color: #6666FF;
                 padding: 2.5%;
+                cursor: pointer;
             }
         }
     }
