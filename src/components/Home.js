@@ -15,14 +15,14 @@ export default function Home() {
                 Sleep<br />
                 <span>&lt;Code&gt;</span><br />
                 Repeat<br />
-                <button>Explore Portfolio</button></span>
+                <a className='headerButton' href='#projects'>Explore Portfolio</a></span>
             </div>
         </StyledHome>
     )
 }
 
 const StyledHome = styled.header`
-    height: 92vh;
+    height: 100vh;
     width: 100%;
     background: #000000;
     display: flex;
@@ -51,13 +51,14 @@ const StyledHome = styled.header`
             margin: 0 50px -100px 0;
             line-height: 1.2;
 
-            button {
-                height: 35px;
-                width: 100px;
+            .headerButton {
+                /* height: 35px;
+                width: 150px; */
+                padding: 6% 10%;
                 background-color: #28A7F0;
-                font-size: 1rem;
+                font-size: 1.6rem;
                 color: white;
-                border: none;
+                text-decoration: none;
                 transition: .3s ease-in-out;
 
                 &:hover{
