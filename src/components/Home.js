@@ -52,8 +52,6 @@ const StyledHome = styled.header`
             line-height: 1.2;
 
             .headerButton {
-                /* height: 35px;
-                width: 150px; */
                 padding: 6% 10%;
                 background-color: #28A7F0;
                 font-size: 1.6rem;

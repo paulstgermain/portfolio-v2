@@ -23,7 +23,7 @@ export default function Footer(){
                 <div className='footerCta'>
                     <p>Specializing in extraordinary web applications, APIs, databases, and more.</p>
                     <p>Recruiting?</p>
-                    <button>Hire Me!</button>
+                    <a className='footerButton' href='mailto:paulg.stgermain@gmail.com'>Hire Me!</a>
                 </div>
 
                 <div className='footerNav'>
@@ -60,7 +60,6 @@ const StyledFooter = styled.footer`
 
     .footerContact, .footerCta, .footerNav {
         width: 34%;
-        /* border: 1px solid white; */
     }
 
     .footerContact {
@@ -113,13 +112,14 @@ const StyledFooter = styled.footer`
 
         }
 
-        button {
+        .footerButton {
             padding: 2%;
             border: none;
             border-radius: 2px;
             margin-top: 35px;
             background-color: #28A7F0;
             color: #ffffff;
+            text-decoration: none;
             transition: .3s ease-in-out;
 
             &:hover {
