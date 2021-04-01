@@ -1,23 +1,27 @@
 import styled from 'styled-components';
 
-export default function Project(){
+export default function Project(props){
+
+    const { title, details, image, github, web } = props.data;
 
     return(
         <StyledProject>
             <div className='projectInfo'>
                 <div className='projectText'>
-                    <h3>Project Title</h3>
-                    <p>Project Description</p>
+                    <h3>{ title }</h3>
+                    <p>{ details }</p>
                 </div>
 
                 <div className='projectLinks'>
-                    <a href='#'>Visit Repository</a>
+                    <a href={github} target='_blank' rel='noreferrer'>Visit Repository</a>
                     <p>|</p>
-                    <a href='#'>View on the Web</a>
+                    <a href={web} target='_blank' rel='noreferrer'>View on the Web</a>
                 </div>
             </div>
 
-            <div className='projectImg'></div>
+            <div className='projectImg'>
+                <img src={image} alt='project screenshot' />
+            </div>
         </StyledProject>
     )
 }
@@ -52,6 +56,7 @@ const StyledProject = styled.div`
             p {
                 font-size: 2rem;
                 color: rgb(99,99,99);
+                width: 95%;
             }
         }
 
@@ -81,5 +86,11 @@ const StyledProject = styled.div`
         height: 100%;
         width: 45%;
         background-color: #6666FF;
+        overflow: hidden;
+
+        img {
+            width: 200%;
+            margin-left: -220px;
+        }
     }
 `

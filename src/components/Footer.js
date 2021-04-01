@@ -102,6 +102,7 @@ const StyledFooter = styled.footer`
         align-items: center;
         margin-top: 2%;
         font-size: 3rem;
+        text-align: center;
 
         p {
             width: 65%;

@@ -18,6 +18,7 @@ export default function Skills(){
                     <li>Bootstrap</li>
                     <li>Reactstrap</li>
                     <li>Vanilla JS</li>
+                    <li>jQuery</li>
                     <li>React</li>
                     <li>Redux</li>
                 </ul>
@@ -29,6 +30,7 @@ export default function Skills(){
                     <li>Express</li>
                     <li>SQL</li>
                     <li>PostgreSQL</li>
+                    <li>JSON</li>
                 </ul>
 
                 <h3>Technologies & Extras</h3>
@@ -40,6 +42,8 @@ export default function Skills(){
                     <li>Postman</li>
                     <li>Insomnia</li>
                     <li>GSAP</li>
+                    <li>Jest</li>
+                    <li>Cypress</li>
                 </ul>
 
 
@@ -84,6 +88,7 @@ const StyledSkills = styled.div`
             list-style: none;
             display: flex;
             flex-wrap: wrap;
+            justify-content: center;
             width: 25%;
             margin: 0 auto;
             text-align: center;

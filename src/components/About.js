@@ -50,6 +50,13 @@ const StyledAbout = styled.div`
 
     .aboutText {
         width: 50%;
+
+        p {
+            color: white;
+            font-size: 2rem;
+            margin-left: -55px;
+            width: 95%;
+        }
     }
 
     img {
@@ -57,8 +64,4 @@ const StyledAbout = styled.div`
         width: 300px;
     }
 
-    p {
-        color: white;
-        font-size: 2rem;
-    }
 `

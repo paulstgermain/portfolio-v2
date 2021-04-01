@@ -115,5 +115,5 @@ const StyledForm = styled.form`
             background-color: #6666FF;
             cursor: pointer;
         }
-
+      }
 `

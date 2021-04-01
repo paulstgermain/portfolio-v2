@@ -2,15 +2,19 @@ import styled from 'styled-components';
 
 import jumbo from '../assets/ales-nesetril-Im7lZjxeLhg-unsplash.jpg'
 
-const arrows = ['<', '>']
-
 export default function Home() {
 
     return (
         <StyledHome>
             <div>
                 <img className='jumbo' src={jumbo} alt='An open laptop' />
-                <span className='headerText'>Eat<br/>Sleep<br /><span>{arrows[0]}Code{arrows[1]}</span><br />Repeat<br /><button>Explore Portfolio</button></span>
+
+                <span className='headerText'>
+                Eat<br/>
+                Sleep<br />
+                <span>&lt;Code&gt;</span><br />
+                Repeat<br />
+                <button>Explore Portfolio</button></span>
             </div>
         </StyledHome>
     )
@@ -36,7 +40,6 @@ const StyledHome = styled.div`
         display: flex;
         justify-content: space-between;
         align-items: center;
-        /* border: 1px solid white; */
 
         .headerText {
             color: #28A7F0;
