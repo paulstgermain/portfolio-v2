@@ -6,6 +6,7 @@ export default function Home() {
 
     return (
         <StyledHome>
+            <span id='home'></span>
             <div>
                 <img className='jumbo' src={jumbo} alt='An open laptop' />
 
@@ -20,7 +21,7 @@ export default function Home() {
     )
 }
 
-const StyledHome = styled.div`
+const StyledHome = styled.header`
     height: 92vh;
     width: 100%;
     background: #000000;

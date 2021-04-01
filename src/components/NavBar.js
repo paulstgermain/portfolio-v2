@@ -1,24 +1,50 @@
+import { useState, useEffect } from 'react';
 import styled from 'styled-components';
+import { debounce } from '../utils/debounce';
+
+const scrollStyles = {
+    position: 'fixed',
+    width: '100%',
+    transition: 'top 0.3s',
+}
 
 export default function NavBar() {
+    const [oldScroll, setOldScroll] = useState(0);
+    const [visible, setVisible] = useState(true);
+    
+    const handleScroll = debounce(() => {
+        const scrollPos = window.pageYOffset;
 
+        setVisible((oldScroll > scrollPos || scrollPos < 10));
+
+        setOldScroll(scrollPos);
+    }, 100);
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+
+        return () => window.removeEventListener('scroll', handleScroll);
+
+    }, [oldScroll, visible, handleScroll])
 
     return (
-        <StyledNav>
-            <h1>PAUL ST.GERMAIN</h1>
-            <ul>
-                <a href='#'>About</a>
-                <a href='#'>Skills</a>
-                <a href='#'>Projects</a>
-                <a href='#'>Contact</a>
-            </ul>
-        </StyledNav>
+        <div style={{...scrollStyles, top: visible ? '0' : '-70px'}}>
+            <StyledNav>
+                <h1>PAUL ST.GERMAIN</h1>
+                <ul>
+                    <a href='#about'>About</a>
+                    <a href='#skills'>Skills</a>
+                    <a href='#projects'>Projects</a>
+                    <a href='#contact'>Contact</a>
+                </ul>
+            </StyledNav>
+        </div>
     )
 }
 
 const StyledNav = styled.nav`
-    position: sticky;
-    top: 0;
+    /* position: sticky;
+    top: 0; */
     width: 100%;
     height: 50px;
     color: #28A7F0;

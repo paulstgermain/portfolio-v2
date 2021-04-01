@@ -4,6 +4,7 @@ export default function Skills(){
 
     return(
         <StyledSkills>
+            <span id='skills'></span>
             <div className='skillsHeader'>
                 <h2>SERN Stacked</h2>
                 <p className='skillSubTitle'>(With Port and Starboard Attachments)</p>
@@ -52,7 +53,7 @@ export default function Skills(){
     )
 }
 
-const StyledSkills = styled.div`
+const StyledSkills = styled.section`
     width: 100%;
     height: 92vh;
     padding: 2%;

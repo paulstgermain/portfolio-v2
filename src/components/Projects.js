@@ -8,6 +8,7 @@ export default function Projects(){
 
     return (
         <StyledProjects>
+            <span id='projects'></span>
             <h2>Projects</h2>
             { projectsData.map(project => {
                 return <Project data={project} />
@@ -17,7 +18,7 @@ export default function Projects(){
     )
 }
 
-const StyledProjects = styled.div`
+const StyledProjects = styled.section`
     width: 100%;
     padding: 2%;
     background: rgb(81,173,207);

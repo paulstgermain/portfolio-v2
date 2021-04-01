@@ -6,13 +6,14 @@ export default function Contact(){
 
     return(
         <StyledContact>
+            <span id='contact'></span>
             <h2>Get in Touch</h2>
             <ContactForm />
         </StyledContact>
     )
 }
 
-const StyledContact = styled.div`
+const StyledContact = styled.section`
     width: 100%;
     height: 100vh;
     padding: 2%;

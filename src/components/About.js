@@ -5,6 +5,7 @@ export default function About(){
 
     return (
         <StyledAbout>
+            <span id='about'></span>
             <h2>Full-Stack Development</h2>
             <div className='aboutContainer'>
 
@@ -24,7 +25,7 @@ export default function About(){
     )
 }
 
-const StyledAbout = styled.div`
+const StyledAbout = styled.section`
     width: 100%;
     height: 85vh;
     background: #28A7F0;
