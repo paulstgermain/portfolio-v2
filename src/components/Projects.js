@@ -13,7 +13,7 @@ export default function Projects(){
             { projectsData.map(project => {
                 return <Project data={project} />
             }) }
-            <button>See More</button>
+            {/* <button>See More</button> */}
         </StyledProjects>
     )
 }
@@ -28,7 +28,7 @@ const StyledProjects = styled.section`
         color: white;
     }
 
-    button {
+    /* button {
         margin: 0 40%;
         padding: 1% 3%;
         font-size: 2.8rem;
@@ -41,7 +41,7 @@ const StyledProjects = styled.section`
         &:hover {
             background-color: #6666FF;
             cursor: pointer;
-        }
+        } */
       }
 `
 
