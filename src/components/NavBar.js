@@ -84,10 +84,10 @@ const StyledNav = styled.nav`
     @media screen and (max-width: 768px){
         flex-direction: column;
         justify-content: center;
-        height: 75px;
+        height: 80px;
 
         h1 {
-            margin: 25px 0;
+            margin: 0 0 10px 0;
         }
 
         ul {
@@ -100,7 +100,7 @@ const StyledNav = styled.nav`
 
     @media screen and (max-width: 543px){
         h1 {
-            margin: 25px 0 25px 0;
+            margin: 0 0 0 0;
         }
 
         ul {
@@ -109,12 +109,12 @@ const StyledNav = styled.nav`
     }
 
     @media screen and (max-width: 414px){
+        height: 95px;
+
         h1 {
-            margin: 0 0 25px 0;
+            margin: 0 0 10px 0;
         }
 
-        /* border: 1px solid white; */
-        height: 115px;
         ul {
             width: 100%;
         }
