@@ -14,14 +14,14 @@ export default function Skills(){
                 <h3>Front-End</h3>
                 <hr />
                 <ul>
+                    <li>React</li>
+                    <li>Redux</li>
+                    <li>Vanilla JS</li>
                     <li>HTML</li>
                     <li>CSS</li>
                     <li>Bootstrap</li>
                     <li>Reactstrap</li>
-                    <li>Vanilla JS</li>
                     <li>jQuery</li>
-                    <li>React</li>
-                    <li>Redux</li>
                 </ul>
 
                 <h3>Back-End</h3>
@@ -37,10 +37,11 @@ export default function Skills(){
                 <h3>Technologies & Extras</h3>
                 <hr/>
                 <ul>
+                    <li>SQLite</li>
+                    <li>PostgreSQL</li>
+                    <li>Postman</li>
                     <li>Git/GitHub</li>
                     <li>RESTful APIs</li>
-                    <li>SQLite</li>
-                    <li>Postman</li>
                     <li>Insomnia</li>
                     <li>GSAP</li>
                     <li>Jest</li>
@@ -97,6 +98,36 @@ const StyledSkills = styled.section`
             li {
                 font-size: 1.8rem;
                 margin: 2%;
+            }
+        }
+    }
+
+    @media screen and (max-width: 730px){
+
+        .skills {
+
+            ul {
+                width: 35%;
+            }
+        }
+    }
+
+    @media screen and (max-width: 540px){
+
+        .skills {
+
+            ul {
+                width: 45%;
+            }
+        }
+    }
+
+    @media screen and (max-width: 414px){
+        height: 100vh;
+
+        .skills {
+            ul {
+                width: 75%;
             }
         }
     }
