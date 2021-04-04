@@ -65,4 +65,45 @@ const StyledAbout = styled.section`
         width: 300px;
     }
 
+    @media screen and (max-width: 906px){
+        .aboutImg {
+            img {
+                width: 250px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px){
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .aboutText {
+            p {
+                margin: 0;
+            }
+        }
+    }
+
+    @media screen and (max-width: 640px){
+
+        .aboutImg {
+            display: none;
+        }
+
+        .aboutText {
+            width: 90%;
+
+            p { 
+                width: 100%;
+            }
+        }
+    }
+
+    @media screen and (max-width: 450px){
+        h2 {
+            font-size: 3.2rem;
+        }
+    }
+
 `
