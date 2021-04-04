@@ -72,6 +72,73 @@ const StyledHome = styled.header`
             color: #83F00F;
         }
     }
+
+    @media screen and (max-width: 906px){
+        div {
+            flex-direction: column-reverse;
+
+            .headerText {
+                width: 300px;
+
+                .headerButton{
+                    padding: 4% 8%;
+                    font-size: 1.6rem;
+                }
+            }
+
+        }
+    }
+
+    @media screen and (max-width: 768px){
+        justify-content: center;
+
+        div {
+            flex-direction: column-reverse;
+
+            .jumbo {
+                display: none;
+            }
+
+            .headerText {
+                font-size: 4.9rem;
+                width: 300px;
+                
+                .headerButton {
+                    font-size: 2rem;
+                }
+            }
+
+            span {
+                font-size: 4.9rem;
+            }
+        }
+    }
+
+    @media screen and (max-width: 543px){
+        justify-content: center;
+
+        div {
+            .jumbo {
+                display: none;
+            }
+
+            .headerText {
+                margin: 0 0 0 -75px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 414px){
+        justify-content: center;
+
+        .jumbo {
+            display: none;
+        }
+
+        .headerText {
+            margin: 0;
+        }
+    }
 `
 
 // Fonts: Archivo, Archivo Black, Average Sans. 

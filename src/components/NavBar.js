@@ -28,7 +28,7 @@ export default function NavBar() {
     }, [oldScroll, visible, handleScroll])
 
     return (
-        <div style={{...scrollStyles, top: visible ? '0' : '-70px'}}>
+        <div style={{...scrollStyles, top: visible ? '0' : '-115px'}}>
             <StyledNav>
                 <h1>PAUL ST.GERMAIN</h1>
                 <ul>
@@ -70,6 +70,53 @@ const StyledNav = styled.nav`
             text-decoration: none;
             color: #28A7F0;
             font-size: 1.6rem;
+        }
+    }
+
+    @media screen and (max-width: 906px){
+        ul {
+            a {
+                font-size: 2rem;
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px){
+        flex-direction: column;
+        justify-content: center;
+        height: 75px;
+
+        h1 {
+            margin: 25px 0;
+        }
+
+        ul {
+
+            a {
+                font-size: 2rem;
+            }
+        }
+    }
+
+    @media screen and (max-width: 543px){
+        h1 {
+            margin: 25px 0 25px 0;
+        }
+
+        ul {
+            width: 75%;
+        }
+    }
+
+    @media screen and (max-width: 414px){
+        h1 {
+            margin: 0 0 25px 0;
+        }
+
+        /* border: 1px solid white; */
+        height: 115px;
+        ul {
+            width: 100%;
         }
     }
 `
