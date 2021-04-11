@@ -41,8 +41,8 @@ const StyledProjects = styled.section`
         &:hover {
             background-color: #6666FF;
             cursor: pointer;
-        } */
-      }
+        } 
+    } */
 `
 
 const projectsData = [
@@ -50,6 +50,7 @@ const projectsData = [
         title: 'Rent a Tech',
         details: 'As the senior front-end developer on the team, I was in charge of ensuring that style was implemented consistently across the page, as well as responsible for the implementation of Redux to handle both state and user interactions throughout the application.',
         image: tech,
+        skills: 'React | Redux | Axios',
         github: 'https://github.com/TT-33-Use-My-Tech-Stuff',
         web: 'https://rent-a-tech.herokuapp.com/'
     },
@@ -57,6 +58,7 @@ const projectsData = [
         title: 'React/Redux Pokedex',
         details: `An app designed to allow a user to see every character from within the chosen generation of monsters from the franchise. This was built in the journey to expand my skills with React\'s implementation of Redux. There were a few hurdles to overcome in regards to managing so much data per generation, and I found Redux to be the perfect fit!`,
         image: pokedex,
+        skills: 'React | Redux | Axios | Redux-Thunk',
         github: 'https://github.com/paulstgermain/react-redux-pokedex',
         web: 'https://react-redux-pokedex-eight.vercel.app/'
     },
