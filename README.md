@@ -30,4 +30,5 @@ npm start
 
 ## Screenshots
 <img width="1512" alt="image" src="https://github.com/user-attachments/assets/99f511f2-5c9f-4a00-a803-f2395839ea6f" />
-_Screenshot of the hero section._
+
+*Screenshot of the hero section*
